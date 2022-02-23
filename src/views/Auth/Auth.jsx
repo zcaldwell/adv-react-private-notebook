@@ -37,7 +37,7 @@ export default function Auth({ isSigningUp = false }) {
 
       {isSigningUp ? (
         <p>
-          Already have an account?? <Link to="/login">Sign In</Link>
+          Already have an account? <Link to="/login">Sign In</Link>
         </p>
       ) : (
         <p>
