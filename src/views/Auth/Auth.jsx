@@ -14,10 +14,10 @@ export default function Auth({ isSigningUp = false }) {
     try {
       if (isSigningUp) {
         await signUpUser(email, password);
-        history.push('/confirm-email')
+        history.push('/confirm-email');
       } else {
         const response = await signInUser(email, password);
-        setUser({ id: response.id, email: response.email })
+        setUser({ id: response.id, email: response.email });
         history.replace('/profile');
       }
     } catch (error) {
@@ -37,7 +37,7 @@ export default function Auth({ isSigningUp = false }) {
 
       {isSigningUp ? (
         <p>
-          Already have an account? <Link to="/login">Sign In</Link>
+          Already have an account?? <Link to="/login">Sign In</Link>
         </p>
       ) : (
         <p>
